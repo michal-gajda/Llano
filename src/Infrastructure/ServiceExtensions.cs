@@ -12,7 +12,11 @@ public static class ServiceExtensions
         public IServiceCollection AddInfrastructure(IConfiguration configuration)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            services.AddWolverine(opts => { opts.Discovery.IncludeAssembly(assembly); });
+
+            services.AddWolverine(cfg =>
+            {
+                cfg.Discovery.IncludeAssembly(assembly);
+            });
 
             return services;
         }

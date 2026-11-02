@@ -11,9 +11,10 @@ public static class ServiceExtensions
         public IServiceCollection AddApplication()
         {
             var assembly = Assembly.GetExecutingAssembly();
-            services.AddWolverine(opts =>
+
+            services.AddWolverine(cfg =>
             {
-                opts.Discovery.IncludeAssembly(assembly);
+                cfg.Discovery.IncludeAssembly(assembly);
             });
 
             return services;
