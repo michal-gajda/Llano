@@ -9,6 +9,9 @@
   <Folder Name="/src/Infrastructure/">
     <Project Path="src/Infrastructure/Llano.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/ServiceDefaults/">
+    <Project Path="src/ServiceDefaults/Llano.ServiceDefaults.csproj" />
+  </Folder>
   <Folder Name="/src/WebApi/">
     <Project Path="src/WebApi/Llano.WebApi.csproj" />
   </Folder>

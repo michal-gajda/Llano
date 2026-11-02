@@ -9,6 +9,8 @@ public static class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.AddServiceDefaults();
+
         builder.Services.AddApplication();
         builder.Services.AddInfrastructure(builder.Configuration);
 
@@ -17,10 +19,13 @@ public static class Program
 
         var app = builder.Build();
 
-        if (app.Environment.IsDevelopment())
+        app.MapDefaultEndpoints();
+
+        app.MapOpenApi();
+        app.UseSwaggerUI(options =>
         {
-            app.MapOpenApi();
-        }
+            options.SwaggerEndpoint("/openapi/v1.json", "Llano API v1");
+        });
 
         app.UseAuthorization();
 

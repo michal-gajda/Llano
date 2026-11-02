@@ -2,10 +2,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure\Llano.Infrastructure.csproj" />
+    <ProjectReference Include="..\ServiceDefaults\Llano.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>
