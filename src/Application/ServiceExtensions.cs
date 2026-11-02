@@ -12,9 +12,9 @@ public static class ServiceExtensions
         {
             var assembly = Assembly.GetExecutingAssembly();
 
-            services.AddWolverine(cfg =>
+            services.AddWolverine(options =>
             {
-                cfg.Discovery.IncludeAssembly(assembly);
+                options.Discovery.IncludeAssembly(assembly);
             });
 
             return services;
