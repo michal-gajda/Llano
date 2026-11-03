@@ -15,4 +15,8 @@
   <Folder Name="/src/WebApi/">
     <Project Path="src/WebApi/Llano.WebApi.csproj" />
   </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/FunctionalTests/">
+    <Project Path="tests/FunctionalTests/Llano.FunctionalTests.csproj" />
+  </Folder>
 </Solution>

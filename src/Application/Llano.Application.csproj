@@ -2,6 +2,11 @@
 
   <ItemGroup>
     <PackageReference Include="WolverineFx" />
+    <PackageReference Include="WolverineFx.RuntimeCompilation" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Wolverine.Attributes" />
   </ItemGroup>
 
   <ItemGroup>

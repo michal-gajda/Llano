@@ -78,6 +78,18 @@ public static class ServiceExtensions
 }
 ```
 
+## Functional Tests
+
+```powershell
+dotnet new nunit --framework net10.0 --output tests/FunctionalTests --name Llano.FunctionalTests
+dotnet add tests/FunctionalTests reference src/Infrastructure
+dotnet add tests/FunctionalTests package Microsoft.Extensions.Configuration
+dotnet add tests/FunctionalTests package Microsoft.Extensions.DependencyInjection
+dotnet add tests/FunctionalTests package Microsoft.Extensions.Logging
+dotnet add tests/FunctionalTests package Shouldly
+dotnet sln add tests/Application.FunctionalTests
+```
+
 ## .NET Aspire
 
 ```powershell
